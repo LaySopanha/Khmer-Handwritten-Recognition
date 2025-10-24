@@ -1,0 +1,17 @@
+data:
+  train_jsonl: data/train.jsonl
+  valid_jsonl: data/valid.jsonl
+  image_height: 384
+  max_target_length: 256
+
+model:
+  name: microsoft/trocr-base-handwritten
+  tokenizer_dir: null
+
+train:
+  output: runs/trocr-km
+  batch_size: 8
+  epochs: 5
+  lr_decoder: 0.0001
+  lr_encoder: 0.00001
+
